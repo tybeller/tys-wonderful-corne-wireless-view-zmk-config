@@ -1,0 +1,4 @@
+name: tys-corne-config
+build:
+  settings:
+    board_root: .
