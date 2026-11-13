@@ -80,7 +80,7 @@
                         display-name = "Lower";
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp RALT
-   &bt_clr_hold BT_CLR 0 &bt_sel_hold 0 0 &bt_sel_hold 1 0 &bt_sel_hold 2 0 &bt_sel_hold 3 0 &bt_sel_hold 4 0   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &bt_clr_hold BT_CLR_CMD 0 &bt_sel_hold 0 0 &bt_sel_hold 1 0 &bt_sel_hold 2 0 &bt_sel_hold 3 0 &bt_sel_hold 4 0   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &to 1        &to 0        &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                            &trans       &trans       &kp SPACE    &kp RET        &kp BSPC &trans
                         >;
