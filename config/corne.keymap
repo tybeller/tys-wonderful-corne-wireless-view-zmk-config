@@ -164,10 +164,10 @@
 
         combos {
             compatible = "zmk,combos";
-            combo_caps {
+            combo_caps_word {
                 timeout-ms = <100>;
                 key-positions = <24 35>;
-                bindings = <&kp CAPS>;
+                bindings = <&caps_word>;
             };
         };
 };
