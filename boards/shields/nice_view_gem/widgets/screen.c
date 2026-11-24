@@ -23,7 +23,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include "screen.h"
 
 LV_IMG_DECLARE(left_hand);
-#define WORDMARK_TOP 64
+#define WORDMARK_TOP 52
 #define WORDMARK_HEIGHT 69
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -176,8 +176,8 @@ int zmk_widget_screen_init(struct zmk_widget_screen *widget, lv_obj_t *parent) {
     lv_obj_align(bottom, LV_ALIGN_TOP_RIGHT, BUFFER_OFFSET_BOTTOM, 0);
     lv_canvas_set_buffer(bottom, widget->cbuf3, BUFFER_SIZE, BUFFER_SIZE, LV_IMG_CF_TRUE_COLOR);
 
-    // "LEFT HAND" wordmark in place of the WPM widget, centered on the same
-    // portrait row as the character art on the right half (rows 64-132).
+    // "LEFT HAND" wordmark in place of the WPM widget, centered in the gap
+    // between the battery row and the profile dots (rows 52-120).
     lv_obj_t *wordmark = lv_img_create(widget->obj);
     lv_img_set_src(wordmark, &left_hand);
     lv_obj_align(wordmark, LV_ALIGN_TOP_LEFT, SCREEN_HEIGHT - WORDMARK_TOP - WORDMARK_HEIGHT, 0);
